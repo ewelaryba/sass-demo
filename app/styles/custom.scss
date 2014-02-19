@@ -1,0 +1,63 @@
+$main: #cc6699;
+$white: #fff;
+$secondbackgrd: #D4AABF;
+$accent: #7F3359;
+$contrast: #39777F;
+$pea: #B0D29E;
+@mixin title-underline {
+     border-bottom: 4px solid $accent;
+ } 
+
+body{
+    background-color: $white;
+    font-family: 'EB Garamond', serif;
+}
+.page {
+    height: 100vh;
+}
+.sub-nav {
+    background-color: $main;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.sub-nav li.active a {
+    background-color: $accent;
+}
+
+.sub-nav li a {
+    color: $white;
+}
+p {
+    padding: 1em;
+    text-align: center -200px;
+}
+.logo {
+  margin: auto;
+  position: relative;
+   width: 50%;
+    left: 25%;
+   padding-top: 5%;
+    height: auto;
+}
+
+h1  {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 3em;
+     @include title-underline;
+}
+h2, h3 {
+    @extend h1;
+    color: $pea;
+   
+}
+ 
+
+li {
+    font-size: 2em;
+}
+
+code.hightlight
+{
+    
+}

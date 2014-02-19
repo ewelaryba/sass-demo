@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sass Demo</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/foundation.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+    <script data-main="scripts/main" src="scripts/libs/require.js"></script>
+    <script src="scripts/libs/jquery.js"></script>
+    <script src="scripts/foundation/foundation.js"></script>
+    <script src="scripts/foundation/foundation.magellan.js"></script>
+</head>
+
+<body>
+
+    <div data-magellan-expedition="fixed">
+        <ul class="sub-nav">
+            <li data-magellan-arrival="Home">
+                <a href="#Home">SASS</a>
+            </li>
+            <li data-magellan-arrival="Features">
+                <a href="#Features">Features</a>
+            </li>
+            <li data-magellan-arrival="GruntWatch">
+                <a href="#GruntWatch">Grunt and Watch</a>
+            </li>
+            <li data-magellan-arrival="Demo">
+                <a href="#Demo">Demo Time</a>
+            </li>
+            <li data-magellan-arrival="Resources">
+                <a href="#Resources">Resources</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page" id="Home">
+        <img class="logo" src="images/logo-235e394c.png">
+        <p class="large-12 large-centered columns">“Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.”
+            <br>-says Sass</p>
+    </div>
+    <div class="page" data-magellan-destination="Features" id="Features">
+        <h3 class="large-4 large-centered columns">Features</h3>
+        <ul class="large-8 large-centered columns">
+            <li>Variables</li>
+            <li>Mixins</li>
+            <li>Operators</li>
+            <li>Inheritance</li>
+            <li>Imports</li>
+            <li>Partials</li>
+            <li>Nesting</li>
+        </ul>
+    </div>
+    <div class="page" data-magellan-destination="GruntWatch" id="GruntWatch">
+        <div class="large-8 large-centered columns">
+        <h1 class="large-10 large-centered columns">Grunt with Watch</h1>
+<pre><span class="nx">watch</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">css</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">files</span><span class="o">:</span> <span class="s1">'**/*.sass'</span><span class="p">,</span>
+    <span class="nx">tasks</span><span class="o">:</span> <span class="p">[</span><span class="s1">'sass'</span><span class="p">],</span>
+    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">livereload</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+<span class="p">},</span>
+</pre> <br>
+    <pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+  <span class="nx">sass</span><span class="o">:</span> <span class="p">{</span>                              <span class="c1">// Task</span>
+    <span class="nx">dist</span><span class="o">:</span> <span class="p">{</span>                            <span class="c1">// Target</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>                       <span class="c1">// Target options</span>
+        <span class="nx">style</span><span class="o">:</span> <span class="s1">'expanded'</span>
+      <span class="p">},</span>
+      <span class="nx">files</span><span class="o">:</span> <span class="p">{</span>                         <span class="c1">// Dictionary of files</span>
+        <span class="s1">'main.css'</span><span class="o">:</span> <span class="s1">'main.scss'</span><span class="p">,</span>       <span class="c1">// 'destination': 'source'</span>
+        <span class="s1">'widgets.css'</span><span class="o">:</span> <span class="s1">'widgets.scss'</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-contrib-sass'</span><span class="p">);</span>
+
+<span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'sass'</span><span class="p">]);</span>
+</pre>
+    </div></div>
+    <div class="page" data-magellan-destination="Demo" id="Demo">
+        <h1 class="large-4 large-centered columns">DEMO</h1>
+    </div>
+    <div class="page" data-magellan-destination="Resources" id="Resources">
+        <h3 class="large-4 large-centered columns">Resources</h3>
+        <ul class="large-8 large-centered columns">
+            <li>http://sass-lang.com/guide</li>
+            <li>http://thesassway.com</li>
+            <li>http://css-tricks.com/sass-vs-less/</li>
+            <li>http://bourbon.io</li>
+            <li>http://compass-style.org</li>
+            <li>http://ryanchristiani.com/getting-started-with-grunt-and-sass/</li>
+            <li>http://thesassway.com/beginner/getting-started-with-sass-and-compass</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
