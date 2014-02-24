@@ -29,10 +29,11 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000330}}
 p {
   padding: 1em;
-  text-align: center -200px;
+  text-align: center;
+  font-size: 1.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000335}}
 .logo {
   margin: auto;
   position: relative;
@@ -42,7 +43,7 @@ p {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000344}}
 h1, h2, h3 {
   padding-top: 10vh;
   text-align: center;
@@ -50,12 +51,18 @@ h1, h2, h3 {
   border-bottom: 4px solid #7f3359;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000349}}
-h2, h3 {
-  color: #b0d29e;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000354}}
+h4 {
+  text-align: center;
+  padding-top: 10vh;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000359}}
 li {
   font-size: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ewelinaprockow\/Desktop\/Code\%20Fellows\/sass-demo\/app\/styles\/custom\.scss}line{font-family:\0000364}}
+ul li a {
+  color: black;
 }

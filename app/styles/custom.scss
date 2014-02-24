@@ -29,7 +29,8 @@ body{
 }
 p {
     padding: 1em;
-    text-align: center -200px;
+    text-align: center;
+    font-size: 1.4em;
 }
 .logo {
   margin: auto;
@@ -48,16 +49,22 @@ h1  {
 }
 h2, h3 {
     @extend h1;
-    color: $pea;
-   
 }
- 
+
+h4 {
+    text-align: center;
+    padding-top: 10vh;
+}
 
 li {
     font-size: 2em;
 }
-
-code.hightlight
-{
-    
+ul {
+    li {
+       a {
+           color: black;
+        }
+    }
 }
+
+
